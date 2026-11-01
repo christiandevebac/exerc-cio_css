@@ -1,0 +1,123 @@
+.entretenimento {
+    text-align: center;
+    color: #7567de;
+}
+.card-noticia img {
+    width: 100%;          /* Faz a imagem ocupar no máximo a largura do card */
+    height: 220px;        /* Define uma altura fixa padrão elegante */
+    object-fit: cover;    /* Corta e ajusta a foto para não ficar esticada ou amassada */
+    display: block;       /* Remove espaçamentos desalinhados na base da imagem */
+}
+/* Configuração Geral */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Títulos das Seções (Entretenimento, Economia) */
+h2 {
+    text-align: center;
+    color: #222;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+/* O segredo para alinhar lado a lado: Container Flexbox */
+.container-noticias {
+    display: flex;
+    flex-direction: row;     /* Força os itens a ficarem lado a lado */
+    flex-wrap: wrap;         /* Se não couber na tela, joga para a linha de baixo */
+    gap: 25px;               /* Espaçamento perfeito entre as notícias */
+    justify-content: center; /* Centraliza o bloco de notícias na tela */
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+/* O Bloco (Card) de cada notícia individual */
+.card-noticia {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;        /* Tamanho fixo perfeito para não esticar */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste perfeito das Imagens dentro dos Cards */
+.card-noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;       /* Corta a imagem proporcionalmente sem amassar */
+}
+
+/* Espaçamento dos Textos Internos */
+.conteudo-noticia {
+    padding: 20px;
+}
+
+/* Data da Notícia */
+.conteudo-noticia span, .data-noticia {
+    font-size: 0.8rem;
+    color: #777;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Título da Notícia */
+.card-noticia h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    color: #111;
+    line-height: 1.4;
+}
+
+/* Parágrafo de texto */
+.card-noticia p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Link "Ler mais" estilizado */
+.card-noticia a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.card-noticia a:hover {
+    text-decoration: underline;
+}
+/* Centraliza os títulos e força as seções a alinharem tudo no meio */
+section {
+    display: flex;
+    flex-direction: column;   /* Empilha o título em cima e o conteúdo embaixo */
+    align-items: center;      /* Centraliza tudo horizontalmente na tela */
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Garante que o bloco que envolve a notícia também centralize o cartão */
+section > div, .container-noticias {
+    display: flex;
+    justify-content: center;  /* Centraliza os cartões horizontalmente */
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+/* Centraliza os títulos das notícias */
+.card-noticia h3 {
+    text-align: center;
+    margin: 15px 0 10px 0; /* Dá um espacinho em cima e embaixo do título */
+}
+
+
